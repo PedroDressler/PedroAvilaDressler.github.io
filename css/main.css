@@ -1,0 +1,57 @@
+h3 {
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-top: 16vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 84px;
+    color: #FFFFFF;
+    text-shadow: -2px 0px 0px #FF5151, -4px 0px 0px #FFCC47, -6px 0px 0px #4786FF;
+    margin: 15vh 0 50vh 0;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, p{
+    font-style: normal;
+    font-size: 24px;
+    text-align: justify;
+    word-spacing: 2.5px;
+}
+
+h2{
+    margin-bottom: 32px;
+}
+
+.box-list{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.box{
+    padding: 3vh 0;
+}
+
+.box1{
+    background-image: url('./assets/comment1.svg');
+    background-repeat: no-repeat;
+}
