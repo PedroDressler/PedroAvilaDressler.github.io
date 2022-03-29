@@ -1,4 +1,4 @@
-@media (max-width: 600px){
+@media (max-width: 800px){
     .site-container{
         margin: 0 5%;
     }
@@ -17,12 +17,8 @@
         text-align: center;
     }
 
-    .box1, .box2, .box4, .box5{
+    .box1, .box2, .box3, .box4, .box5{
         background-position: center top;
-        background-size: 200px;
-    }
-    .box3{
-        background-position: center 40%;
         background-size: 200px;
     }
 
