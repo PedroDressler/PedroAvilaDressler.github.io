@@ -1,0 +1,36 @@
+@media (max-width: 600px){
+    .site-container{
+        margin: 0 5%;
+    }
+
+    h1{
+        font-size: 52px;
+        text-shadow: -1px 0px 0px #FF5151, -2px 0px 0px #FFCC47, -3px 0px 0px #4786FF;
+    }
+
+    p, .box-list li{
+        font-size: 17px;
+    }
+    
+    h2{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .box1, .box2, .box4, .box5{
+        background-position: center top;
+        background-size: 200px;
+    }
+    .box3{
+        background-position: center 40%;
+        background-size: 200px;
+    }
+
+    .box-left h2, .box-left p{
+        margin-left: 0;
+    }
+    
+    .box-right h2, .box-right p{
+        margin-right: 0;
+    }
+}
