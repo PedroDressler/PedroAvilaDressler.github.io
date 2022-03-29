@@ -19,7 +19,6 @@
 
     .box1, .box2, .box3, .box4, .box5{
         background-position: center top;
-        background-size: 200px;
     }
 
     .box-left h2, .box-left p{
@@ -28,5 +27,24 @@
     
     .box-right h2, .box-right p{
         margin-right: 0;
+    }
+
+    h2{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px){
+    .box1, .box2, .box3, .box4, .box5{
+        background-size: 250px;
+    }
+    
+
+    p, .box-list li{
+        font-size: 17px;
+    }
+    
+    h2{
+        font-size: 26px;
     }
 }
