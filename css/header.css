@@ -5,13 +5,13 @@ body {
 a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
     font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
 
 a:hover {
     opacity: 0.7;
+    transition: 0.3s;
 }
 
 .site-container {

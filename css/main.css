@@ -25,33 +25,74 @@ h1 {
     margin: 15vh 0 50vh 0;
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, .box li{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-h2, p{
+h2, p, .box li{
     font-style: normal;
     font-size: 24px;
     text-align: justify;
-    word-spacing: 2.5px;
 }
 
 h2{
-    margin-bottom: 32px;
-}
-
-.box-list{
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    margin-bottom: 30px;
 }
 
 .box{
-    padding: 3vh 0;
+    height: 350px;
+    margin-bottom: 25vh;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .box1{
-    background-image: url('./assets/comment1.svg');
-    background-repeat: no-repeat;
+    background-image: url('../assets/comment1.svg');
+    background-position: left center;
+}
+
+.box2{
+    background-image: url('../assets/present.svg');
+    background-position: right center;
+}
+
+.box3{
+    background-image: url('../assets/future.svg');
+    background-position: left bottom;
+    background-size: 400px;
+}
+
+.box4{
+    background-image: url('../assets/comment2.svg');
+    background-position: right center;
+}
+
+.box5{
+    background-image: url('../assets/monitor.svg');
+    background-position: center center;
+}
+
+.box5 h2{
+    text-align: center;
+}
+
+.box5 ul{
+    margin: 0 auto;
+}
+
+.box-left h2, .box-left p{
+    margin-left: 20%;
+}
+
+.box-right h2, .box-right p{
+    margin-right: 20%;
+}
+
+#setup{
+    margin-left: 0;
 }
