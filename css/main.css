@@ -25,12 +25,12 @@ h1 {
     margin: 15vh 0 50vh 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, .box li{
+h1, h2, h3, h4, h5, h6, p, .box li, button{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-h2, p, .box li{
+h2, p, .box li, .box a, button{
     font-style: normal;
     font-size: 24px;
     text-align: justify;
@@ -46,7 +46,7 @@ h2{
     display: flex;
     flex-flow: nowrap column;
     justify-content: center;
-    background-image: url('');
+    align-content: center;
     background-repeat: no-repeat;
     background-size: auto;
 }
@@ -77,7 +77,12 @@ h2{
     background-position: center center;
 }
 
-.box5 h2{
+.box6{
+    background-image: url('../assets/cellphone.svg');
+    background-position: center center;
+}
+
+.box-center{
     text-align: center;
 }
 
@@ -93,6 +98,16 @@ h2{
     margin-right: 20%;
 }
 
-#setup{
-    margin-left: 0;
+.box-center h2, .box-center p, .box-center a{
+    text-align: center;
+}
+
+.box-center a{
+    margin-bottom: 1vh;
+}
+
+button{
+    border: 0 solid transparent;
+    background: none;
+    margin: 0 auto;
 }
