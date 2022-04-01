@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h3 {
     font-family: 'Roboto';
     font-size: 32px;
@@ -110,4 +111,118 @@ button{
     border: 0 solid transparent;
     background: none;
     margin: 0 auto;
+=======
+h3 {
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin-top: 16vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 84px;
+    color: #FFFFFF;
+    text-shadow: -2px 0px 0px #FF5151, -4px 0px 0px #FFCC47, -6px 0px 0px #4786FF;
+    margin: 15vh 0 50vh 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, .box li, button{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, p, .box li, .box a, button{
+    font-style: normal;
+    font-size: 24px;
+    text-align: justify;
+}
+
+h2{
+    margin-bottom: 30px;
+}
+
+.box{
+    height: 350px;
+    margin-bottom: 25vh;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.box1{
+    background-image: url('../assets/comment1.svg');
+    background-position: left center;
+}
+
+.box2{
+    background-image: url('../assets/present.svg');
+    background-position: right center;
+}
+
+.box3{
+    background-image: url('../assets/future.svg');
+    background-position: left bottom;
+    background-size: 400px;
+}
+
+.box4{
+    background-image: url('../assets/comment2.svg');
+    background-position: right center;
+}
+
+.box5{
+    background-image: url('../assets/monitor.svg');
+    background-position: center center;
+}
+
+.box6{
+    background-image: url('../assets/cellphone.svg');
+    background-position: center center;
+}
+
+.box-center{
+    text-align: center;
+}
+
+.box5 ul{
+    margin: 0 auto;
+}
+
+.box-left h2, .box-left p{
+    margin-left: 20%;
+}
+
+.box-right h2, .box-right p{
+    margin-right: 20%;
+}
+
+.box-center h2, .box-center p, .box-center a{
+    text-align: center;
+}
+
+.box-center a{
+    margin-bottom: 1vh;
+}
+
+button{
+    border: 0 solid transparent;
+    background: none;
+    margin: 0 auto;
+>>>>>>> e1fad0e52a77d517152ffcaeac7adb580e5ed81f
 }
