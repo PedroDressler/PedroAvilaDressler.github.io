@@ -25,12 +25,12 @@ h1 {
     margin: 15vh 0 50vh 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, .box li, button{
+h1, h2, h3, h4, h5, h6, p, .box li, sub{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-h2, p, .box li, .box a, button{
+h2, p, .box li, .box a, sub{
     font-style: normal;
     font-size: 24px;
     text-align: justify;
@@ -98,16 +98,10 @@ h2{
     margin-right: 20%;
 }
 
-.box-center h2, .box-center p, .box-center a{
+.box-center h2, .box-center p, .box-center a, .box-center sub{
     text-align: center;
 }
 
-.box-center a{
+.box-center a, .box-center sub{
     margin-bottom: 1vh;
-}
-
-button{
-    border: 0 solid transparent;
-    background: none;
-    margin: 0 auto;
 }

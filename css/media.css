@@ -28,10 +28,6 @@
     .box-right h2, .box-right p{
         margin-right: 0;
     }
-
-    h2{
-        text-align: center;
-    }
 }
 
 @media (max-width: 1000px){
@@ -42,10 +38,18 @@
     .box1, .box2, .box3, .box4, .box5, .box6{
         background-size: 250px;
     }
+
+    .box6{
+        background-size: 165px;
+    }
     
 
-    .box-list p, .box-list li, .box-list a, button{
+    .box-list p, .box-list li, .box-list a{
         font-size: 15pt;
+    }
+
+    .box-list sub{
+        font-size: 13pt;
     }
     
     h2{
