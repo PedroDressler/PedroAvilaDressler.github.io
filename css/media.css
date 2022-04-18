@@ -44,12 +44,8 @@
     }
     
 
-    .box-list p, .box-list li, .box-list a{
+    .box-list p, .box-list li, .box-list a, .box-list button{
         font-size: 15pt;
-    }
-
-    .box-list sub{
-        font-size: 13pt;
     }
     
     h2{
