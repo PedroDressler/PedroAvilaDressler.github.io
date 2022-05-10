@@ -122,69 +122,46 @@ h2 {
 
 .box-center h2,
 .box-center p,
-.box-center a,
-.box-center button {
+.box-center a{
   text-align: center;
 }
 
-.box-center a,
-.box-center sub {
-  margin-bottom: 1vh;
+#github{
+  background: url('../assets/github.svg') no-repeat center center;
+  background-size: cover;
 }
 
-#myEmail {
-  cursor: pointer;
+#linkedin{
+  background: url('../assets/linkedin.svg') no-repeat center center;
+  background-size: cover;
 }
 
-.ativo {
-  color: rgb(103, 199, 255);
+#whats{
+  background: url('../assets/whatsapp.svg') no-repeat center center;
+  background-size: cover;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
+#gmail{
+  background: url('../assets/gmail.svg') no-repeat center center;
+  background-size: cover;
+  margin: 0 1.1rem;
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 150;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 100%;
-}
-
-#myEmail {
+.social{
   background-color: transparent;
-  border: 0;
-  color: white;
+  border: 0 solid transparent;
+  width: 50px;
+  height: 50px;
+  margin: 0 1rem;
 }
 
-#myEmail:hover {
-  color: rgba(255, 255, 255, 0.7);
+.social-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container input:hover{
+  opacity: 0.7;
   transition: 0.2s;
 }

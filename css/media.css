@@ -4,8 +4,8 @@
     }
 
     h1{
-        font-size: 52px;
-        text-shadow: -1px 0px 0px #FF5151, -2px 0px 0px #FFCC47, -3px 0px 0px #4786FF;
+        font-size: 46px;
+        text-shadow: -2px 0px 0px #4786FF, -4px 0px 0px #FFCC47, -6px 0px 0px #FF5151;
     }
 
     .box p, .box li, .box a{
