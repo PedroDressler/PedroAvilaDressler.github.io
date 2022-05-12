@@ -3,10 +3,21 @@ footer{
   background-color: black;
 }
 
-label{
+footer li{
   color: white;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 3vh;
+  list-style: none;
+  text-align: center;
+}
+
+footer a:hover{
+  border-bottom: 2px solid white;
+}
+
+footer a:target{
+  color: cornflowerblue;
+  border-color: cornflowerblue;
 }
 
 .footer-main{

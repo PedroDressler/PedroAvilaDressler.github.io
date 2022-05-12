@@ -11,6 +11,14 @@ h3 {
   margin-top: 16vh;
 }
 
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -22,8 +30,9 @@ h1 {
   line-height: 84px;
   color: white;
   text-shadow: -2px 0px 0px #4786FF, -4px 0px 0px #FFCC47, -6px 0px 0px #D7263D;
-  margin: 15vh 0 50vh 0;
+  margin: 15vh 0 55vh 0;
 }
+
 
 img {
   width: 250px;
@@ -52,7 +61,7 @@ p,
 .box a,
 .box button {
   font-style: normal;
-  font-size: 24px;
+  font-size: 18pt;
   text-align: justify;
 }
 
@@ -61,14 +70,21 @@ h2 {
 }
 
 .box {
-  height: 350px;
-  margin-bottom: 25vh;
+  min-height: 280px;
   display: flex;
   flex-flow: nowrap column;
   justify-content: center;
   align-content: center;
   background-repeat: no-repeat;
   background-size: auto;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 50vh;
+}
+
+.box:last-child {
+  margin-bottom: 30vh;
 }
 
 .box1 {
@@ -97,6 +113,10 @@ h2 {
   background-position: center center;
 }
 
+.box5 ul li {
+  list-style: square;
+}
+
 .box6 {
   background-image: url('../assets/cellphone.svg');
   background-position: center center;
@@ -122,32 +142,32 @@ h2 {
 
 .box-center h2,
 .box-center p,
-.box-center a{
+.box-center a {
   text-align: center;
 }
 
-#github{
+#github {
   background: url('../assets/github.svg') no-repeat center center;
   background-size: cover;
 }
 
-#linkedin{
+#linkedin {
   background: url('../assets/linkedin.svg') no-repeat center center;
   background-size: cover;
 }
 
-#whats{
+#whats {
   background: url('../assets/whatsapp.svg') no-repeat center center;
   background-size: cover;
 }
 
-#gmail{
+#gmail {
   background: url('../assets/gmail.svg') no-repeat center center;
   background-size: cover;
   margin: 0 1.1rem;
 }
 
-.social{
+.social {
   background-color: transparent;
   border: 0 solid transparent;
   width: 50px;
@@ -155,13 +175,100 @@ h2 {
   margin: 0 1rem;
 }
 
-.social-container{
+.social-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.social-container input:hover{
-  opacity: 0.7;
-  transition: 0.2s;
+.social {
+  transform: scale(1);
+  transition: 300ms;
+}
+
+/* Animações */
+
+.social:hover {
+  transition: 300ms;
+  cursor: pointer;
+  z-index: 1;
+  transform: scale(1.5);
+}
+
+.box[data-scroll="in"] {
+  animation: boxslide 0.7s;
+  visibility: visible;
+}
+
+.box[data-scroll="out"] {
+  visibility: hidden;
+}
+
+@keyframes boxslide {
+  from {
+    opacity: 0;
+    transform: translateX(-10vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0vh);
+  }
+}
+
+.spanEmail {
+  padding: 12px 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #020202;
+}
+
+.imgCopy, .imgCopy img{
+  width: 30px;
+  height: 30px;
+}
+
+.imgCopy{
+  margin-left: 1.2vw;
+}
+
+.imgCopy:hover{
+  cursor: pointer;
+}
+
+.spanEmail, .imgCopy{
+  animation: mailslide 0.2s;
+}
+
+.margin-top{
+  margin-top: 3vh;
+}
+
+@keyframes mailslide {
+  from {
+    margin-top: -3vh;
+    opacity: 0;
+  } to {
+    margin-top: 0vh;
+    opacity: 1;
+  }
+}
+
+.spanEmail ul li {
+  font-family: 'consolas';
+  font-size: 14pt;
+  font-style: italic;
+  color: #f50052;
+}
+
+.spanEmail ul li::before {
+  content: "'";
+}
+
+.spanEmail ul li::after {
+  content: "'";
+}
+
+.filter{
+  filter: invert(71%) sepia(87%) saturate(1758%) hue-rotate(110deg) brightness(98%) contrast(101%);
 }
