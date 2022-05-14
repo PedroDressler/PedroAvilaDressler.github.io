@@ -1,70 +1,114 @@
 @media (max-width: 600px) {
-    .site-container {
-        margin: 0 5%;
+  .site-container {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 46px;
+    margin: 150px 0 450px 0;
+    text-shadow: -2px 0px 0px #4786FF, -4px 0px 0px #FFCC47, -6px 0px 0px #FF5151;
+  }
+
+  .box p,
+  .box li {
+    font-size: 20pt;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .logo {
+    margin: 50px;
+  }
+
+  h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    background-position: center top;
+  }
+
+  .box-left h2,
+  .box-left p {
+    margin-left: 0;
+  }
+
+  .box-right h2,
+  .box-right p {
+    margin-right: 0;
+  }
+
+  .box p,
+  .box h2 {
+    letter-spacing: 1.2px;
+  }
+
+  .spanEmail {
+    padding: 8px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #020202;
+  }
+
+  .spanEmail ul li {
+    font-size: 12pt;
+  }
+
+  .imgCopy {
+    margin-left: 15px;
+  }
+
+  .imgCopy,
+  .imgCopy img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .margin-top {
+    margin-top: 30px;
+  }
+
+  @keyframes mailslide {
+    from {
+      margin-top: -30px;
+      opacity: 0;
     }
 
-    h1 {
-        font-size: 46px;
-        margin: 15vh 0 35vh 0;
-        text-shadow: -2px 0px 0px #4786FF, -4px 0px 0px #FFCC47, -6px 0px 0px #FF5151;
+    to {
+      margin-top: 0px;
+      opacity: 1;
     }
+  }
 
-    .box p,
-    .box li,
-    .box a {
-        line-height: 2;
-        font-size: 20pt;
-    }
-
-    img {
-        width: 150px;
-        margin-top: 3vh;
-    }
-
-    h2 {
-        font-size: 26px;
-        text-align: center;
-    }
-
-    .box1,
-    .box2,
-    .box3,
-    .box4,
-    .box5,
-    .box6 {
-        background-position: center top;
-    }
-
-    .box-left h2,
-    .box-left p {
-        margin-left: 0;
-    }
-
-    .box-right h2,
-    .box-right p {
-        margin-right: 0;
-    }
 }
 
 @media (max-width: 1000px) {
-    .site-container {
-        margin: 0 10%;
-    }
+  .site-container {
+    margin: 0 10vw;
+  }
 
-    .box1,
-    .box2,
-    .box3,
-    .box4,
-    .box5,
-    .box6 {
-        background-size: 250px;
-    }
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    background-size: 250px;
+  }
 
-    .box6 {
-        background-size: 165px;
-    }
+  .box6 {
+    background-size: 165px;
+  }
 
-    h2 {
-        font-size: 22pt;
-    }
+  h2 {
+    font-size: 22pt;
+  }
 }

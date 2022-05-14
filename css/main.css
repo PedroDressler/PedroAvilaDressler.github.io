@@ -1,3 +1,10 @@
+:root {
+  --filter-aqua: brightness(0) saturate(100%) invert(82%) sepia(59%) saturate(5484%) hue-rotate(121deg) brightness(107%) contrast(111%);
+  --filter-white: brightness(0) saturate(100%) invert(100%) sepia(71%) saturate(752%) hue-rotate(177deg) brightness(107%) contrast(105%);
+}
+
+
+
 h3 {
   font-family: 'Roboto';
   font-size: 32px;
@@ -8,7 +15,7 @@ h3 {
   text-align: center;
   color: white;
   font-weight: 400;
-  margin-top: 16vh;
+  margin-top: 16px;
 }
 
 li {
@@ -30,16 +37,17 @@ h1 {
   line-height: 84px;
   color: white;
   text-shadow: -2px 0px 0px #4786FF, -4px 0px 0px #FFCC47, -6px 0px 0px #D7263D;
-  margin: 15vh 0 55vh 0;
+  margin: 150px 0 450px 0;
 }
 
 
-img {
+main img,
+footer img {
   width: 250px;
 }
 
 .logo {
-  margin-top: 10vh;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
@@ -80,11 +88,11 @@ h2 {
 }
 
 .box:not(:last-child) {
-  margin-bottom: 50vh;
+  margin-bottom: 400px;
 }
 
 .box:last-child {
-  margin-bottom: 30vh;
+  margin-bottom: 300px;
 }
 
 .box1 {
@@ -196,7 +204,7 @@ h2 {
 }
 
 .box[data-scroll="in"] {
-  animation: boxslide 0.7s;
+  animation: boxslide .7s;
   visibility: visible;
 }
 
@@ -207,68 +215,94 @@ h2 {
 @keyframes boxslide {
   from {
     opacity: 0;
-    transform: translateX(-10vh);
+    transform: translateX(-20px);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0vh);
+    transform: translateX(0px);
   }
 }
 
 .spanEmail {
+  width: 361.55px;
   padding: 12px 30px;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10px;
-  background-color: #020202;
+  background: linear-gradient(135deg, #0e0e0e 0%, #020202 100%);
 }
 
-.imgCopy, .imgCopy img{
+.spanEmail ul li{
+  text-align: center;
+}
+
+.imgCopy,
+.imgCopy img {
   width: 30px;
   height: 30px;
 }
 
-.imgCopy{
-  margin-left: 1.2vw;
+.imgCopy {
+  margin-left: 20px;
 }
 
-.imgCopy:hover{
+.imgCopy:hover {
   cursor: pointer;
 }
 
-.spanEmail, .imgCopy{
-  animation: mailslide 0.2s;
+.spanEmail,
+.imgCopy {
+  animation: mailslide 200ms;
 }
 
-.margin-top{
-  margin-top: 3vh;
+.margin-top {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
 }
 
 @keyframes mailslide {
   from {
-    margin-top: -3vh;
+    margin-top: -25px;
     opacity: 0;
-  } to {
-    margin-top: 0vh;
+  }
+
+  to {
+    margin-top: 0px;
     opacity: 1;
   }
 }
 
 .spanEmail ul li {
-  font-family: 'consolas';
+  font-family: 'Consolas';
   font-size: 14pt;
   font-style: italic;
   color: #f50052;
 }
 
-.spanEmail ul li::before {
-  content: "'";
-}
-
+.spanEmail ul li::before,
 .spanEmail ul li::after {
   content: "'";
 }
 
-.filter{
-  filter: invert(71%) sepia(87%) saturate(1758%) hue-rotate(110deg) brightness(98%) contrast(101%);
+#copiarEmail{
+  transform: scale(1);
+  transition: 300ms;
 }
+
+.active{
+  animation: mailclick .2s;
+}
+
+@keyframes mailclick{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+

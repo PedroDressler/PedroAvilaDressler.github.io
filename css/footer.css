@@ -15,7 +15,7 @@ footer a:hover{
   border-bottom: 2px solid white;
 }
 
-footer a:target{
+footer a:active{
   color: cornflowerblue;
   border-color: cornflowerblue;
 }
